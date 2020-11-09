@@ -89,11 +89,15 @@ p {
 .fadein, .fadeout {
   opacity: 0;
   -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .fadein {
   opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 8s ease-in-out;
+  transition: opacity 8s ease-in-out;
 }
 
 nav.nav {
@@ -2626,7 +2630,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 25px;
-    border-bottom: 1px solid #572D14;
+    border-bottom: 1px solid #E3DECA;
     padding-bottom: 15px;
   }
   section.demos .right ul li {

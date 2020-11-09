@@ -109,7 +109,10 @@ $(document).ready(function(){
     $(window).scroll(function(){
 		$('nav ul.nav').removeClass('change');
 		$('#harmburger').removeClass('changed');
-		$("nav ul.nav").removeClass("fadein").addClass("fadeout");
+		
+		if ($(document).scrollTop() > 400) {
+			$("nav ul.nav").removeClass("fadein").addClass("fadeout");
+        }
     });
 });
 
