@@ -2009,7 +2009,7 @@ footer {
   }
   section.demos .right {
     border: none;
-    border-bottom: 0px solid #572D14;
+    border-bottom: 0px solid #E3DECA;
     padding: 0 0px;
   }
   section.demos .right .top {
@@ -2036,7 +2036,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 25px;
-    border-bottom: 1px solid #572D14;
+    border-bottom: 1px solid #E3DECA;
     padding-bottom: 15px;
   }
   section.demos .right ul li {
@@ -2050,7 +2050,7 @@ footer {
     font-size: 14px;
   }
   section.demos .right ul li button.active {
-    border: 1px solid #572D14;
+    border: 1px solid #E3DECA;
   }
   section.demos .right ul li button.active img {
     display: none;
@@ -2361,7 +2361,7 @@ footer {
   }
   section.demos .right {
     border: none;
-    border-bottom: 0px solid #572D14;
+    border-bottom: 0px solid #E3DECA;
     padding: 0 0px;
   }
   section.demos .right .top {
@@ -2388,7 +2388,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 25px;
-    border-bottom: 1px solid #572D14;
+    border-bottom: 1px solid #E3DECA;
     padding-bottom: 15px;
   }
   section.demos .right ul li {
@@ -2413,9 +2413,6 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 16px;
-  }
-  section.demos .right ul li button.active {
-    border: 1px solid #572D14;
   }
   section.demos .right ul li button.active img {
     display: none;
@@ -2605,7 +2602,7 @@ footer {
   }
   section.demos .right {
     border: none;
-    border-bottom: 0px solid #572D14;
+    border-bottom: 0px solid #E3DECA;
     padding: 0 0px;
   }
   section.demos .right h5 {
@@ -2651,7 +2648,7 @@ footer {
             justify-content: center;
   }
   section.demos .right ul li button.active {
-    border: 1px solid #572D14;
+    border: 1px solid #E3DECA;
   }
   section.demos .right ul li button.active img {
     display: none;

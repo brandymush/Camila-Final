@@ -73,10 +73,10 @@ $('.logo').click(function(){
 	$('#harmburger').toggleClass('changed');
 	$('.menu-img').toggleClass('d-none');
 	
-		if ($("ul.nav").hasClass("change"))
-			$("ul.nav").removeClass("fadeout").addClass("fadein");
+		if ($("nav ul.nav").hasClass("change"))
+			$("nav ul.nav").removeClass("fadeout").addClass("fadein");
 		else
-			$("ul.nav").removeClass("fadein").addClass("fadeout");
+			$("nav ul.nav").removeClass("fadein").addClass("fadeout");
 	
    
 });
@@ -103,22 +103,17 @@ $('a.carousel').click(function (e) {
 // 	$('.glyphicon-play-circle').show();
 // 	$('.glyphicon-play-pause').hide();
 // }
-var top0 = $('.heroe').offset().top;
-var top1 = $('#about').offset().top;
-var top2 = $('#service').offset().top;
-var top3 = $('#work').offset().top;
-var top4 = $('#test').offset().top;
-var top5 = $('#ambition').offset().top;
 
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+		$('nav ul.nav').removeClass('change');
+		$('#harmburger').removeClass('changed');
+		$("nav ul.nav").removeClass("fadein").addClass("fadeout");
+    });
+});
 
-
-  $(window).scroll(function() {
-	$('nav ul.nav').removeClass('change');
-	if($(window).scrollTop() + $(window).height() == $(document).height()) {
-		$('nav').css('background-color', 'transparent');
-	}
- });
+  
  
 $(document).on('click', '.nav-pills li', function () {
 		var $el = $(this);
