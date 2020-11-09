@@ -6,7 +6,7 @@
 });
 
 $('.test-items')
-	.on('afterChange', function(event, slick, currentSlide, nextSlide){
+	.on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		// finally let's do this after changing slides
 		$('.slider-count #current').html(currentSlide+1);
 	});
@@ -21,8 +21,8 @@ $(".test-items").slick({
 	slidesToScroll:1,
 	autoplay:false,
 	fade:true,
-	speed: 2000,
-	autoplaySpeed: 2000,
+	speed:800,
+	autoplaySpeed:1000,
     prevArrow: $('.prev'),
 	nextArrow: $('.next'),
 	
@@ -69,9 +69,15 @@ $(".test-items").slick({
 });
 
 $('.logo').click(function(){
-	$('nav ul.nav').toggleClass('change');
+	$('nav ul.nav').toggleClass('change fadeout');
 	$('#harmburger').toggleClass('changed');
 	$('.menu-img').toggleClass('d-none');
+	
+		if ($("ul.nav").hasClass("change"))
+			$("ul.nav").removeClass("fadeout").addClass("fadein");
+		else
+			$("ul.nav").removeClass("fadein").addClass("fadeout");
+	
    
 });
 
@@ -104,26 +110,7 @@ var top3 = $('#work').offset().top;
 var top4 = $('#test').offset().top;
 var top5 = $('#ambition').offset().top;
 
-$(document).scroll(function() {
-	var scrollPos = $(document).scrollTop();
-	if (scrollPos >= top0 && scrollPos < top1) {
-		$('nav').css('background-color', 'transparent');
-	  }
-	if (scrollPos >= top1 && scrollPos < top2) {
-	  $('nav').css('background-color', '#572D14');
-	} else if (scrollPos >= top2 && scrollPos < top3) {
-	  $('nav').css('background-color', 'transparent');
-	} else if (scrollPos >= top3 && scrollPos < top4) {
-	  $('nav').css('background-color', '#572D14');
-	} else if (scrollPos >= top4 && scrollPos < top5) {
-	  $('nav').css('background-color', 'transparent');
-	}else if (scrollPos >= top5) {
-	  $('nav').css('background-color', '#572D14');
-	}
-	
-	 
 
-  });
 
 
   $(window).scroll(function() {
