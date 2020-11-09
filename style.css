@@ -1717,7 +1717,7 @@ footer {
   }
   nav.nav ul {
     width: 100%;
-    height: 350px;
+    height: 100vh;
   }
   nav.nav ul li {
     margin-right: 20px;
@@ -1907,10 +1907,17 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  footer .contact .icons a i {
+    font-size: 50px;
+  }
+  footer .form-part {
+    padding-top: 30px;
+  }
   footer .form-part .top {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 20px;
   }
   footer form input {
     width: 100%;
