@@ -1776,11 +1776,12 @@ footer {
   .heroe .heroe-img {
     width: 100%;
     height: 266px;
+    padding-top: 30px;
   }
   .heroe .heroe-img img.bg {
     height: 100%;
     position: relative;
-    left: -26px;
+    left: -16px;
   }
   .about {
     margin: 50px auto;
@@ -1796,6 +1797,7 @@ footer {
   .about .left h2 {
     line-height: 20px;
     padding-bottom: 30px;
+    font-size: 24px;
   }
   .about .left .top {
     padding-bottom: 0;
@@ -2128,6 +2130,10 @@ footer {
     display: flex;
     padding: 75px 50px 20px;
     height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .heroe .heroe-text h1 {
     font-size: 30px;
@@ -2356,8 +2362,9 @@ footer {
     font-size: 20px;
   }
   section.demos {
-    padding: 10px 20px;
+    padding: 10px 40px;
     overflow: hidden;
+    height: 100%;
   }
   section.demos .right {
     border: none;
