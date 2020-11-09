@@ -121,6 +121,14 @@ nav.nav{z-index: 99;justify-content: space-between;align-items: center;width: 10
             }
       h6{white-space:pre-line;line-height:40px;padding-top:50px;font-size: 32px;line-height:32px;}
       p.last{font-size:18px;padding-top:30.2px;white-space: pre-line;line-height:26px;}
+      .icons{padding-top:60px;
+        a{margin-right: 20px;transition:all .5s ease-in-out;
+          i{font-size:30px;color: #E3DECA;transition:all .5s ease-in-out;}
+          &:hover{
+            i{color:#AB6333;}
+          }
+        }
+      }
       }
       .heroe-img{position: relative;display:flex;justify-content:center;align-items: center;width:560px;height:560px;;
         
@@ -129,14 +137,7 @@ nav.nav{z-index: 99;justify-content: space-between;align-items: center;width: 10
      
       
   }
-  .icons{position: absolute;bottom:50px;right:100px;
-    a{margin-right: 20px;transition:all .5s ease-in-out;
-      i{font-size:30px;color: #E3DECA;transition:all .5s ease-in-out;}
-      &:hover{
-        i{color:#AB6333;}
-      }
-    }
-  }
+  
 }
 
 
@@ -403,8 +404,8 @@ footer{background:#3B3920;padding:100px 0;
     h3{white-space: pre-line;font-size: 24px;color: #E3DECA;line-height:40px;padding-bottom:64px;}
   }
   form{display: flex;flex-direction:column;color:white;
-    input{background-color: transparent;border:none;outline: none;border-bottom:1px solid #E3DECA;padding-bottom:40px;margin-bottom:30px;text-transform: uppercase;;}
-    textarea{background-color: transparent;border:none;outline: none;height:80px;margin-bottom:64px;border-bottom: 1px solid #E3DECA;text-transform: uppercase;;}
+    input{background-color: transparent;border:none;outline: none;border-bottom:1px solid #E3DECA;padding-bottom:40px;margin-bottom:30px;text-transform: uppercase;color:#E3DECA;}
+    textarea{background-color: transparent;border:none;outline: none;height:80px;margin-bottom:64px;border-bottom: 1px solid #E3DECA;text-transform: uppercase;color:#fff;;}
     button{height: 70px;width:358px;border: none;margin-left: auto;font-size:25px;text-transform:capitalize;outline:none;font-family:'salo';background-color:#E3DECA;color: #3B3920;
        &:hover{color:#D5A266;}
     
@@ -581,7 +582,8 @@ footer{background:#3B3920;padding:100px 0;
          &:after{width: 60px;margin-left:30px;}
             }
      
-   
+            .icons{padding-top:25px;
+              img{height:30px;margin-right:26.5px;}}
       }
       .heroe-img{width:100%;height:266px;;
         
@@ -590,8 +592,7 @@ footer{background:#3B3920;padding:100px 0;
      
       
   }
-  .icons{position: absolute;bottom:10px;right:50%;transform:translate(50%,-10%);
-    img{height:30px;margin-right:26.5px;}}
+ 
 }
 
 .about{margin:50px auto;flex-direction: column;min-width:auto !important;
@@ -771,14 +772,15 @@ section.demos{padding:60px 30px 30px;overflow:hidden;height:100%;
        p:first-of-type{padding: 35px 0;
        &::after{margin-left:20px;width:60px;}
             }
+            .icons{
+              img{height:18px;margin-right:16.5px;}}
       }
       .heroe-img{height:200px;width:200px;
     
       img.bg{height:100%;}
       img.circular{height:80%;left:2%;}
   }
-  .icons{bottom:10px;right:0px;
-    img{height:18px;margin-right:16.5px;}}
+  
 }
 
 
@@ -928,13 +930,14 @@ footer .form-part .top {justify-content: center;}
     .heroe-text{
       h1{font-size: 40px;}
       h6{font-size:22px;}
-    }
-      .heroe-img{height:360px;
+      .icons{
+        img{height:43px;margin-right:26.5px;}
+    }}
+      .heroe-img{height:320px;
       img.bg{height:100%;}
       img.circular{height:80%;}
   }
-  .icons{position: absolute;bottom:50px;right:0;
-    img{height:43px;margin-right:26.5px;}}}
+  }
     footer{
   .contact{top:0px;}
  
@@ -1026,7 +1029,11 @@ footer .form-part .top {justify-content: center;}
 }
  }
  .heroe{height:640px;
-  
+     .heroe-text{
+
+    .icons{
+       img{height:43px;margin-right:26.5px;}}
+     }
     .heroe-img{width:360px;height:400px;
       
       img.bg{height:100%;position: relative;left:-30px;}
@@ -1034,8 +1041,6 @@ footer .form-part .top {justify-content: center;}
    
     
 }
-.icons{position: absolute;bottom:50px;right:100px;
-  img{height:43px;margin-right:26.5px;}}
 }
 section.demos{padding: 38px 25px;height:100%;
   .top{
