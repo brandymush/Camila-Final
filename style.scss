@@ -58,23 +58,15 @@ $yellow:'#D5A266';
 $black:'#3B3920';
 
 
+
+
 h1,h2,h3,h4,h5,h6{font-family: 'salo';}
 p{font-family: 'light';}
 
 ::placeholder{color:#E3DECA;}
-.fadein, .fadeout {
-  opacity: 0;
-  -moz-transition: opacity 0.8s ease-in-out;
-  -o-transition: opacity 0.8s ease-in-out;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.8s ease-in-out;
+.fadein, .fadeout {opacity: 0;-moz-transition: opacity 0.8s ease-in-out;-o-transition: opacity 0.8s ease-in-out;-webkit-transition: opacity 0.4s ease-in-out;transition: opacity 0.8s ease-in-out;
 }
-.fadein {
-  opacity: 1;
-  -moz-transition: opacity 8s ease-in-out;
-  -o-transition: opacity 8s ease-in-out;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 8s ease-in-out;
+.fadein {opacity: 1;-moz-transition: opacity 8s ease-in-out;-o-transition: opacity 8s ease-in-out;-webkit-transition: opacity 0.4s ease-in-out;transition: opacity 8s ease-in-out;
 }
 
 nav.nav{z-index: 99;justify-content: space-between;align-items: center;width: 100%;padding:30px 77px;padding-left:77px;font-family:'salo';position: absolute;overflow-y: visible;;
@@ -114,7 +106,9 @@ nav.nav{z-index: 99;justify-content: space-between;align-items: center;width: 10
   #svg1.changed{display:flex !important;}
 // heroe section styles
 
-
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: initial;
+  }
 
 .heroe{display: flex;padding:0 0px 0px 0;align-items: center;background-image: linear-gradient(270deg, #d59b62c2 0%, #AB6333 100%);color: #E3DECA;height:765px;position: relative;justify-content:space-around;
     .heroe-text{
@@ -438,6 +432,41 @@ footer{background:#3B3920;padding:100px 0;
 }
 
 
+.iru-tiny-player .song-main-info .song-timer {margin: 0ex 1ex; white-space: nowrap;
+}
+
+.iru-tiny-player .song-main-info .song-title {flex-grow: 1;white-space: nowrap;overflow: hidden;
+}
+
+.iru-tiny-player .song-seek { position: absolute; width: 100%;height: 100%;
+}
+
+.iru-tiny-player .song-progress {position: absolute;background-color: rgba(21, 29, 31, 0.15);width: 0%;height: 100%;
+}
+
+.iru-tiny-player .song-volume-control { position: absolute;width: 100%;height: 100%;top: 0;display:block;
+}
+
+.iru-tiny-player .song-volume-bar {position: absolute;top: 50%;left: 20%;height: 10px; margin: 0px auto;width: 80%;
+
+}
+
+.iru-tiny-player .song-volume-bar#fg{height :5px;margin: -2.5px auto;width: 60;background:red;
+}
+
+.iru-tiny-player .song-volume-bar#fgg {height: 10px;margin: -5px auto; /* background-color: rgba(255, 255, 255, 0); */ width: 60%; background:red;
+}
+
+.iru-tiny-player .song-volume-bar#bg { height: 1.5px; margin: -0.75px auto;width: 60%;
+}
+
+.iru-tiny-player .song-volume-dot {position: absolute;width: 15px;height: 15px;top: 50%;left: 80%; margin: -7.5px auto;background-color: rgba(21, 29, 31, 0.9);border-radius: 7.5px;cursor: pointer;
+}
+
+
+
+.iru-tiny-player .icon.fa-times {margin: 2ex 2.5ex;position: absolute;font-size: 1.25rem;right: 0;top: 0;
+}
 
 
 
@@ -482,41 +511,6 @@ footer{background:#3B3920;padding:100px 0;
   }
 }
 
-.iru-tiny-player .song-main-info .song-timer {margin: 0ex 1ex; white-space: nowrap;
-}
-
-.iru-tiny-player .song-main-info .song-title {flex-grow: 1;white-space: nowrap;overflow: hidden;
-}
-
-.iru-tiny-player .song-seek { position: absolute; width: 100%;height: 100%;
-}
-
-.iru-tiny-player .song-progress {position: absolute;background-color: rgba(21, 29, 31, 0.15);width: 0%;height: 100%;
-}
-
-.iru-tiny-player .song-volume-control { position: absolute;width: 100%;height: 100%;top: 0;display:block;
-}
-
-.iru-tiny-player .song-volume-bar {position: absolute;top: 50%;left: 20%;height: 10px; margin: 0px auto;width: 80%;
-
-}
-
-.iru-tiny-player .song-volume-bar#fg{height :5px;margin: -2.5px auto;width: 60;background:red;
-}
-
-.iru-tiny-player .song-volume-bar#fgg {height: 10px;margin: -5px auto; /* background-color: rgba(255, 255, 255, 0); */ width: 60%; background:red;
-}
-
-.iru-tiny-player .song-volume-bar#bg { height: 1.5px; margin: -0.75px auto;width: 60%;
-}
-
-.iru-tiny-player .song-volume-dot {position: absolute;width: 15px;height: 15px;top: 50%;left: 80%; margin: -7.5px auto;background-color: rgba(21, 29, 31, 0.9);border-radius: 7.5px;cursor: pointer;
-}
-
-
-
-.iru-tiny-player .icon.fa-times {margin: 2ex 2.5ex;position: absolute;font-size: 1.25rem;right: 0;top: 0;
-}
 
 @media screen and (max-width: 480px) {
   .iru-tiny-player .icon.fa-times {margin: 2ex 1.5ex;
@@ -1052,3 +1046,6 @@ section.demos{padding: 38px 25px;height:100%;
 }
 #about > div > div > div.col-md-4 > div{display: flex;flex-direction: column;align-items: flex-end;}
 }
+
+
+// Voice ocer Camila Website done by Uncommon.org /////

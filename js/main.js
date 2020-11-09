@@ -97,21 +97,15 @@ $('a.carousel').click(function (e) {
 });
 
 
-// function onClickVid($this){
-// 	$('.iframe').toggleClass('active');
 
-// 	$('.glyphicon-play-circle').show();
-// 	$('.glyphicon-play-pause').hide();
-// }
 
 
 $(document).ready(function(){
     $(window).scroll(function(){
-		$('nav ul.nav').removeClass('change');
-		$('#harmburger').removeClass('changed');
-		
 		if ($(document).scrollTop() > 400) {
+			$('nav ul.nav').removeClass('change');
 			$("nav ul.nav").removeClass("fadein").addClass("fadeout");
+			$('#harmburger').removeClass('changed');
         }
     });
 });
