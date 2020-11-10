@@ -63,7 +63,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'salo';
+  font-family: 'salomeitalic';
 }
 
 p {
@@ -111,7 +111,7 @@ nav.nav {
   width: 100%;
   padding: 30px 77px;
   padding-left: 77px;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   position: absolute;
   overflow-y: visible;
 }
@@ -134,7 +134,7 @@ nav.nav .logo p {
   color: #E3DECA;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 22px;
 }
 
@@ -225,6 +225,8 @@ nav.nav ul img {
 nav.nav ul li {
   margin-right: 20px;
   margin-bottom: 30px;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 nav.nav ul li a {
@@ -322,6 +324,7 @@ ul.change {
   padding-top: 50px;
   font-size: 32px;
   line-height: 32px;
+  padding-right: 30px;
 }
 
 .heroe .heroe-text p.last {
@@ -437,7 +440,7 @@ ul.change {
 }
 
 .about .left p:first-of-type {
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 24px;
   padding-bottom: 35px;
 }
@@ -545,7 +548,7 @@ p.switch img {
 .left-two h2 {
   font-size: 30px;
   padding-bottom: 60px;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
 }
 
 p.next-arrow, p.next-prev {
@@ -692,7 +695,7 @@ audio {
 .work .hire h2 {
   padding: 20px 0;
   word-spacing: 8px;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 36px;
 }
 
@@ -719,7 +722,7 @@ audio {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   text-transform: capitalize;
 }
 
@@ -830,7 +833,7 @@ section.demos .right h5 {
   font-size: 36px;
   color: #E3DECA;
   padding-bottom: 50px;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
 }
 
 section.demos .right ul {
@@ -880,7 +883,7 @@ section.demos .right ul li {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
 }
 
 section.demos .right ul li button {
@@ -891,7 +894,7 @@ section.demos .right ul li button {
   height: 100%;
   width: 100%;
   outline: 0;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,7 +1012,7 @@ section.demos .left .demo-list__item {
 section.demos .left .demo-list__item p {
   padding-bottom: 30px;
   color: #E3DECA;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 25px;
 }
 
@@ -1067,6 +1070,7 @@ section.demos .left .demo-list__item button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
+  height: 100%;
 }
 
 .testimony .item .person {
@@ -1077,6 +1081,7 @@ section.demos .left .demo-list__item button {
       -ms-flex-pack: center;
           justify-content: center;
   padding-right: 15px;
+  height: 100%;
 }
 
 .testimony .item .person .content {
@@ -1097,7 +1102,7 @@ section.demos .left .demo-list__item button {
 
 .testimony .item .person .content h4 {
   padding-bottom: 40px;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 24px;
 }
 
@@ -1161,7 +1166,7 @@ section.demos .left .demo-list__item button {
   white-space: pre-line;
   text-transform: uppercase;
   line-height: 30px;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
 }
 
 .testimony .item .person.reverse {
@@ -1272,6 +1277,14 @@ section.demos .left .demo-list__item button {
   height: inherit !important;
 }
 
+.slick-slide > div {
+  height: 100%;
+}
+
+.slick-slide > div .item {
+  height: 100%;
+}
+
 body > section.testimony > div > div.owl-nav {
   width: 150px;
   margin-left: auto;
@@ -1302,7 +1315,7 @@ body > section.testimony > div > div.owl-nav button {
 }
 
 .ambition p.name {
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 28px;
 }
 
@@ -1339,7 +1352,7 @@ footer .contact a {
   color: #E3DECA;
   padding-bottom: 30px;
   text-decoration: none;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   font-size: 24px;
 }
 
@@ -1440,7 +1453,7 @@ footer form button {
   font-size: 25px;
   text-transform: capitalize;
   outline: none;
-  font-family: 'salo';
+  font-family: 'salomeitalic';
   background-color: #E3DECA;
   color: #3B3920;
 }
