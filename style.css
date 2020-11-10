@@ -1654,13 +1654,6 @@ footer {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
-  .iru-tiny-player .song-main-info {
-    margin: 2ex 1ex;
-    font-size: 1rem;
-  }
-}
-
 .iru-tiny-player .icon {
   margin-right: 1ex;
   min-width: 1.5rem;
@@ -1669,16 +1662,6 @@ footer {
   text-decoration: none;
   border-bottom: none;
   position: relative;
-}
-
-@media screen and (max-width: 480px) {
-  .iru-tiny-player .icon {
-    margin-right: 0.25ex;
-    min-width: 1rem;
-    -ms-flex-preferred-size: 2rem;
-        flex-basis: 2rem;
-    font-size: 24px;
-  }
 }
 
 .iru-tiny-player .icon:before {
@@ -1695,14 +1678,22 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .iru-tiny-player .icon.fa-times {
+    margin: 2ex 1.5ex;
+  }
   .iru-tiny-player .song-main-info .icon.fa-stop {
     margin-right: 0.5ex;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .iru-tiny-player .icon.fa-times {
-    margin: 2ex 1.5ex;
+  .iru-tiny-player .icon {
+    margin-right: 0.25ex;
+    min-width: 1rem;
+    -ms-flex-preferred-size: 2rem;
+        flex-basis: 2rem;
+    font-size: 24px;
+  }
+  .iru-tiny-player .song-main-info {
+    margin: 2ex 1ex;
+    font-size: 1rem;
   }
 }
 
@@ -2475,32 +2466,6 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #audio-player #controls {
-    width: 100%;
-  }
-  #audio-player #controls #play img {
-    height: 20px;
-    margin-right: 10px;
-  }
-  #audio-player #controls #play span {
-    font-size: 12px;
-  }
-  #audio-player #controls .right {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 12px;
-  }
-  #audio-player #controls .right span {
-    color: #E3DECA;
-    font-size: 12px;
-  }
-  #audio-player #controls .right img {
-    height: 12px;
-  }
-  #audio-player #controls.fa-play #download {
-    display: none;
-  }
   #footer {
     padding: 30px 0;
   }
@@ -2512,6 +2477,10 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 30px 0;
+  }
+  #footer > div > div > div:nth-child(1) > div .icons a i {
+    font-size: 50px;
   }
   #footer > div > div > div:nth-child(1) > div .form-part .top {
     -webkit-box-pack: center;
@@ -2567,6 +2536,7 @@ footer {
   }
   footer .contact {
     top: 0px;
+    margin-bottom: 30px;
   }
   footer form {
     display: -webkit-box;
@@ -2720,6 +2690,10 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 30px;
+  }
+  #footer > div > div > div:nth-child(1) > div .icons a i {
+    font-size: 85px;
   }
   #footer > div > div > div:nth-child(2) > div > div {
     -webkit-box-pack: center;
