@@ -102,7 +102,7 @@ $('a.carousel').click(function (e) {
 
 $(document).ready(function(){
     $(window).scroll(function(){
-		if ($(document).scrollTop() > 400) {
+		if ($(document).scrollTop() > 800) {
 			$('nav ul.nav').removeClass('change');
 			$("nav ul.nav").removeClass("fadein").addClass("fadeout");
 			$('#harmburger').removeClass('changed');
