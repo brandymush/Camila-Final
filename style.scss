@@ -255,6 +255,7 @@ p.next-prev{right:5%;}
        .glyphicon-play-circle.active{display: none;}
        &:hover{img.glyphicon-play-circle{display:block;}}
     }
+    button:last-child{position:absolute;bottom:-40px;right:30px;outline:0;background-color:#572D14;border: none;box-shadow: none;}
     
   }
  
@@ -300,7 +301,7 @@ p.next-prev{right:5%;}
             img{display: block;}}
        
       }
-      audio{width: 80%;display: flex;justify-content: space-between;}
+      audio{width:80%;display:flex;justify-content:space-between;}
       img{margin:0 10px;height:30px;}
       }
       .demo-list__item{display: flex;flex-direction:column;
@@ -314,7 +315,18 @@ p.next-prev{right:5%;}
    
  }
 
+ .modal{
+   button:last-child{position: absolute;bottom:20px;right:20px;font-size:25px;color:#fff;cursor: pointer;background-color:transparent;border: none;outline: none;}
+  .modal-content{background-color:#572D14;padding:3%;
+    .demo-list__item{display: flex;flex-direction:column;
+      p{padding-bottom:30px;color:#E3DECA;font-family:'salomeitalic';font-size: 25px;}
+      button{color: #E3DECA;outline: none;}
+    }
+    
+  }
+  .fade:not(.show) {opacity:1;}
 
+ }
 .testimony{padding:66px 70px;background-color:#AB6333;color:#E3DECA;overflow-x: hidden;padding-bottom:30px;;
   .top{display: flex;align-items: center;padding-bottom:40px;
     img{height:50px;width:80px;}
@@ -670,7 +682,7 @@ footer{padding-top:50px;padding-bottom:30px;
 
 
 
-section.demos{padding:60px 30px 30px;overflow:hidden;height:100%;
+section.demos{padding:60px 30px 60px;overflow:hidden;height:100%;
     .right{border: none;;border-bottom: 0px solid #E3DECA;padding:0 0px;;
     .top{padding-bottom:20px;
        img{padding-right:15px;height:30px;}
@@ -830,7 +842,7 @@ section.demos{padding:60px 30px 30px;overflow:hidden;height:100%;
        h2{font-size:20px;}
     }
 
-    section.demos{padding:10px 40px;overflow:hidden;height:100%;
+    section.demos{padding:50px 40px;overflow:hidden;height:100%;
     .right{border: none;;border-bottom: 0px solid #E3DECA;padding:0 0px;
     .top{padding-bottom:20px;
        img{padding-right:15px;height:30px;}

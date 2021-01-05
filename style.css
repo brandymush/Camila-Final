@@ -793,6 +793,17 @@ section.demos #menu .iframe:hover img.glyphicon-play-circle {
   display: block;
 }
 
+section.demos #menu button:last-child {
+  position: absolute;
+  bottom: -40px;
+  right: 30px;
+  outline: 0;
+  background-color: #572D14;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 section.demos .tab-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,6 +1030,49 @@ section.demos .left .demo-list__item p {
 section.demos .left .demo-list__item button {
   color: #E3DECA;
   outline: none;
+}
+
+.modal button:last-child {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.modal .modal-content {
+  background-color: #572D14;
+  padding: 3%;
+}
+
+.modal .modal-content .demo-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-content .demo-list__item p {
+  padding-bottom: 30px;
+  color: #E3DECA;
+  font-family: 'salomeitalic';
+  font-size: 25px;
+}
+
+.modal .modal-content .demo-list__item button {
+  color: #E3DECA;
+  outline: none;
+}
+
+.modal .fade:not(.show) {
+  opacity: 1;
 }
 
 .testimony {
@@ -2024,7 +2078,7 @@ footer {
     font-size: 13px;
   }
   section.demos {
-    padding: 60px 30px 30px;
+    padding: 60px 30px 60px;
     overflow: hidden;
     height: 100%;
   }
@@ -2381,7 +2435,7 @@ footer {
     font-size: 20px;
   }
   section.demos {
-    padding: 10px 40px;
+    padding: 50px 40px;
     overflow: hidden;
     height: 100%;
   }
