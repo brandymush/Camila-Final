@@ -2435,7 +2435,7 @@ footer {
     font-size: 20px;
   }
   section.demos {
-    padding: 50px 40px;
+    padding: 70px 40px;
     overflow: hidden;
     height: 100%;
   }
@@ -2633,7 +2633,7 @@ footer {
             align-items: center;
   }
   section.demos {
-    padding: 100px 50px 50px;
+    padding: 100px 50px 70px;
     height: 100%;
   }
   section.demos #menu h3 {
@@ -2813,7 +2813,7 @@ footer {
     margin: auto;
   }
   section.demos {
-    padding: 38px 25px;
+    padding: 70px 25px;
     height: 100%;
   }
   section.demos .top p {
